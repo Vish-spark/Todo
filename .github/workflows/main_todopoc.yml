@@ -50,4 +50,4 @@ jobs:
           app-name: 'Todopoc'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A27EA3ADB9A4BEAB02EFCFD28EFBA83 }}
-          package: '*.jar'
+          package: '${{ github.workspace }}/target/*.jar'
